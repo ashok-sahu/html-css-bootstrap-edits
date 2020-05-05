@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#grad1 {
+    height: 200px;
+    background: red; /* For browsers that do not support gradients */
+    background: linear-gradient(to bottom right, red, yellow); /* Standard syntax (must be last) */
+}
+#grad2 {
+    height: 200px;
+    background: red; /* For browsers that do not support gradients */
+    background: linear-gradient(to right, red , yellow); /* Standard syntax (must be last) */
+}
+#grad3 {
+    height: 200px;
+    background: red; /* For browsers that do not support gradients */
+    background: linear-gradient(red, yellow); /* Standard syntax (must be last) */
+}
+#grad4 {
+    height: 200px;
+    background: red; /* For browsers that do not support gradients */
+    background: linear-gradient(red, yellow, green); /* Standard syntax (must be last) */
+}
+
+#grad5 {
+    height: 200px;
+    background: red; /* For browsers that do not support gradients */
+    background: linear-gradient(red, orange, yellow, green, blue, indigo, violet); /* Standard syntax (must be last) */
+}
+
+#grad6 {
+    height: 200px;
+    background: red; /* For browsers that do not support gradients */
+    background: linear-gradient(red 10%, green 85%, blue 90%); /* Standard syntax (must be last) */
+}
+</style>
+</head>
+<body>
+
+<h1>Linear Gradient - Diagonal</h1>
+<p>This linear gradient starts at top left. It starts red, transitioning to yellow:</p>
+<div id="grad1"></div>
+
+<h1>Linear Gradient - Left to Right</h1>
+<p>This linear gradient starts at the left. It starts red, transitioning to yellow:</p>
+<div id="grad2"></div>
+
+<h1>Linear Gradient - Top to Bottom</h1>
+<p>This linear gradient starts at the top. It starts red, transitioning to yellow:</p>
+<div id="grad3"></div>
+
+<h1>Linear Gradients - Multiple Color Stops</h1>
+
+<h3>3 Color Stops (evenly spaced):</h3>
+<div id="grad4"></div>
+
+<h3>7 Color Stops (evenly spaced):</h3>
+<div id="grad5"></div>
+
+<h3>3 Color Stops (not evenly spaced):</h3>
+<div id="grad6"></div>
+
+<p><strong>Note:</strong> Internet Explorer 9 and earlier versions do not support gradients.</p>
+
+</body>
+</html>

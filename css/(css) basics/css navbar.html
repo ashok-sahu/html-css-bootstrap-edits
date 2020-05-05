@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ul {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    overflow: hidden;
+    background-color: #f1f1f1;
+}
+li b {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+li b.actives {
+    background-color: #4CAF50;
+    color: white;
+}
+
+li b:hover:not(.actives) {
+    background-color: #555;
+    color: white;
+}
+</style>
+</head>
+<body>
+
+<h2>Vertical Navigation Bar</h2>
+<p>In this example, we create an "active" class with a green background color and a white text. The class is added to the "Home" link.</p>
+
+<ul style="list-style-type:none">
+  <li><b class="actives" href="#home">Home</b></li>
+  <li><b href="#news">News</b></li>
+  <li><b href="#contact">Contact</b></li>
+  <li><b href="#about">About</b></li></ul>
+
+</body>
+</html>
